@@ -106,7 +106,10 @@ a:hover, a:active {
         width: auto;
     }
 }
-
+.mission{
+    margin-top: -41px;
+    margin-bottom: 3rem;
+}
 /*
   Hamburger Menu
 ----------------------------------------*/
@@ -221,8 +224,8 @@ a:hover, a:active {
 
 .site-navigation ul li a:hover,
 .site-navigation ul li.current-menu-item a {
-    border-bottom: 3px solid #ff5a00;
-    color: #ff5a00;
+    border-bottom: 3px solid #2185C5;
+    color: #2185C5;
 }
 
 /*
@@ -264,26 +267,30 @@ a:hover, a:active {
     display: block;
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: -162px 0px 0px 0px;
     object-fit: cover;
 }
 
 .hero-content-overlay h1 {
-    margin: 0;
+    margin: -243px 0px 0px 0px;
     font-size: 102px;
     font-weight: 600;
     line-height: 1;
+    color: #096e0d;
 }
 
 .hero-content-overlay h4 {
     margin: 0;
     font-size: 46px;
     font-weight: 600;
+    color:#2185C5;
 }
 
 .hero-content-overlay p {
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.8;
+    font-style: italic;
+    font-family: Arial, Helvetica, Monospace;
 }
 
 .hero-content-overlay .entry-footer a.btn {
@@ -374,7 +381,15 @@ a:hover, a:active {
 }
 
 @media screen and (max-width: 992px){
+    .hero-content-wrap img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+        object-fit: cover;
+    }
     .hero-content-overlay h1 {
+        margin: 0px 0px 0px 0px;
         font-size: 48px;
     }
 
@@ -434,7 +449,7 @@ a:hover, a:active {
 }
 
 .btn.orange-border {
-    border-color: #ff5a00;
+    border-color: rgba(18, 122, 255, 0.86);
 }
 
 .btn.orange-border:hover,
@@ -748,16 +763,26 @@ ul.tabs-nav .tab-nav.active {
 .home-page-icon-boxes {
     padding: 96px 0;
 }
-
+@media screen and (max-width: 992px){
+    .problemsection{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: -81px 0px -88px 0px;
+        object-fit: cover;
+    }
+}
 /*
 # Welcome
 --------------------------------*/
 .home-page-welcome {
+  
     position: relative;
     padding: 96px 0;
-    background: url("images/welcome-bg.jpg") no-repeat center;
+    background: url("images/wp3400538-indian-flag-4k-wallpapers.jpg") no-repeat center;
     background-size: cover;
     z-index: 99;
+    background-attachment: fixed;
 }
 
 .home-page-welcome::after {
@@ -787,7 +812,7 @@ ul.tabs-nav .tab-nav.active {
     width: 64px;
     height: 4px;
     border-radius: 2px;
-    background: #ff5a00;
+    background: #2185C5;
 }
 
 .welcome-content .entry-content {
@@ -1170,6 +1195,13 @@ ul.tabs-nav .tab-nav.active {
 }
 
 @media screen and (max-width: 992px){
+    .problemsection{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: -81px 0px -88px 0px;
+        object-fit: cover;
+    }
     .about-page .welcome-content .entry-title {
         margin-top: 60px;
     }
@@ -2000,7 +2032,7 @@ ul.tabs-nav .tab-nav.active {
     padding: 96px 0 90px;
     font-weight: 500;
     color: #929191;
-    background: url("images/foot-bg.jpg") no-repeat center;
+    /* background: url("images/foot-bg.jpg") no-repeat center; */
     background-size: cover;
     z-index: 99;
 }
@@ -2013,7 +2045,7 @@ ul.tabs-nav .tab-nav.active {
     z-index: -1;
     width: 100%;
     height: 101%;
-    background: rgba(22,22,22,.92);
+    background: rgba(0, 0, 0, 0.92);
 }
 
 .footer-widgets h2 {
@@ -2039,7 +2071,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .footer-widgets ul li a:hover {
-    color: #ff5a00;
+    color: green;
 }
 
 .foot-about p {
@@ -2067,7 +2099,7 @@ ul.tabs-nav .tab-nav.active {
 
 .foot-latest-news ul li .posted-date {
     font-size: 12px;
-    color: #ff5a00;
+    color: green;
 }
 
 .foot-contact ul li {
@@ -2081,7 +2113,7 @@ ul.tabs-nav .tab-nav.active {
     margin-right: 10px;
     font-size: 18px;
     text-align: center;
-    color: #ff5a00;
+    color: green;
 }
 
 .foot-contact ul li span {
@@ -2118,7 +2150,7 @@ ul.tabs-nav .tab-nav.active {
     font-size: 12px;
     line-height: 1;
     text-transform: uppercase;
-    background: #ff5a00;
+    background: green;
     color: #fff;
     cursor: pointer;
     outline: none;
@@ -2131,3 +2163,82 @@ ul.tabs-nav .tab-nav.active {
     background: #131212;
     text-align: center;
 }
+
+
+/* testmonial slider */
+
+.testimonials {
+    overflow: hidden;
+    position: relative;
+    max-height: 300px;
+  }
+  
+  .testimonials {
+    background: #161d25;
+  }
+  
+  .one-slide,
+  .testimonial,
+  .message {
+    border: none !important;
+    outline: none !important;
+  }
+  
+  .icon-overlay {
+    position: absolute;
+    opacity: 0.3;
+    right: 10%;
+    top: 0;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .carousel-controls .control {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: -2.25rem;
+  }
+  
+  .next {
+    right: -2.25rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .testimonials {
+      max-height: 700px;
+    }
+    .icon-overlay {
+      height: 300px;
+      top: calc(50% - 150px);
+    }
+    .carousel-controls .control {
+      width: 25px;
+      height: 25px;
+      top: inherit;
+    }
+    .prev {
+      left: 0;
+    }
+    .next {
+      right: 0;
+    }
+    .control i {
+      font-size: .7rem;
+    }
+    .testimonials .message {
+      font-size: 1rem;
+    }
+    .testimonials h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
