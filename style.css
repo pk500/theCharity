@@ -272,7 +272,7 @@ a:hover, a:active {
 }
 
 .hero-content-overlay h1 {
-    margin: -243px 0px 0px 0px;
+    margin: -281px 0px 0px 0px;
     font-size: 102px;
     font-weight: 600;
     line-height: 1;
@@ -840,6 +840,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .section-heading .entry-title {
+   
     position: relative;
     padding-bottom: 24px;
     font-size: 36px;
@@ -854,7 +855,7 @@ ul.tabs-nav .tab-nav.active {
     width: 64px;
     height: 4px;
     border-radius: 2px;
-    background: #ff5a00;
+    background: #2185C5;
 }
 
 @media screen and (max-width: 992px) {
@@ -1011,11 +1012,7 @@ ul.tabs-nav .tab-nav.active {
 # Home Causes
 --------------------------------*/
 .our-causes {
-    position: relative;
-    padding: 96px 0;
-    background: url("images/cause-bg.jpg") no-repeat center;
-    background-size: cover;
-    z-index: 99;
+    background-color: #071714;
 }
 
 .our-causes::after {
@@ -2165,80 +2162,3 @@ ul.tabs-nav .tab-nav.active {
 }
 
 
-/* testmonial slider */
-
-.testimonials {
-    overflow: hidden;
-    position: relative;
-    max-height: 300px;
-  }
-  
-  .testimonials {
-    background: #161d25;
-  }
-  
-  .one-slide,
-  .testimonial,
-  .message {
-    border: none !important;
-    outline: none !important;
-  }
-  
-  .icon-overlay {
-    position: absolute;
-    opacity: 0.3;
-    right: 10%;
-    top: 0;
-    height: auto;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .carousel-controls .control {
-    position: absolute;
-    transform: translateY(-50%);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    z-index: 1;
-  }
-  
-  .prev {
-    left: -2.25rem;
-  }
-  
-  .next {
-    right: -2.25rem;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .testimonials {
-      max-height: 700px;
-    }
-    .icon-overlay {
-      height: 300px;
-      top: calc(50% - 150px);
-    }
-    .carousel-controls .control {
-      width: 25px;
-      height: 25px;
-      top: inherit;
-    }
-    .prev {
-      left: 0;
-    }
-    .next {
-      right: 0;
-    }
-    .control i {
-      font-size: .7rem;
-    }
-    .testimonials .message {
-      font-size: 1rem;
-    }
-    .testimonials h2 {
-      font-size: 1.5rem;
-    }
-  }
-  
